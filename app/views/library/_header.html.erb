@@ -19,6 +19,16 @@
 		    <li><%= link_to 'Home', root_path %></li>
 		    <li><%= link_to 'About Us', library_about_path %></li>
 		    <li><%= link_to 'Contact Us', library_contact_path %></li>
+
+	      <% if user_signed_in? %>
+				  <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
+				  <li><%= link_to 'My Bookshelf', books_path %></li>
+		      <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
+	      <% else %>
+	        <li><%= link_to 'Login', new_user_session_path %></li>  
+	        <li><%= link_to 'Join', new_user_registration_path %></li> 
+			  <% end %>  
+
 	    </ul>
 	  </div>  
 	  
