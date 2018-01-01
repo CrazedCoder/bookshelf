@@ -5,3 +5,25 @@ $jumbotron-color: white;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+	background-color: #dbfbc1;
+}
+ul.nav a:hover { 
+  color: #135935 !important; 
+}
+
+ul.nav a {
+  color: #fff;
+}
+
+.navbar .brand, .navbar .nav > a {
+    color: #fff;
+}
+
+.navbar-brand a {
+    color: #fff;
+}
+
+.navbar-brand a:hover {
+    color: yellow;
+}
