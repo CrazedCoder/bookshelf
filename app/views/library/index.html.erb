@@ -5,9 +5,9 @@
   
   <div>
   	<% if user_signed_in? %>
-      <%= link_to 'Get Started Organizing', books_path, class: 'btn btn-default' %> 
+      <%= link_to 'Get Started', books_path, class: 'btn btn-default' %> 
     <% else %>
-      <%= link_to 'Get Started Organizing', new_user_registration_path, class: 'btn btn-default' %>
+      <%= link_to 'Get Started', new_user_registration_path, class: 'btn btn-default' %>
     <% end %>  
   </div>
 

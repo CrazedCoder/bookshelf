@@ -8,26 +8,26 @@ $jumbotron-color: white;
 body {
 	background-color: #dbfbc1;
 }
+
+.navbar-default {
+	background-color: #135935;
+}
+
 ul.nav a:hover { 
-  color: #135935 !important; 
+  color: yellow !important; 
 }
 
 ul.nav a {
-  color: #fff;
+	color: white !important;
 }
 
-.navbar .brand, .navbar .nav > a {
-    color: #fff;
+.navbar-brand {
+	color: white !important; 
 }
 
-.navbar-brand a {
-    color: #fff;
+.navbar-brand:hover {
+	color: yellow !important;
 }
-
-.navbar-brand a:hover {
-    color: yellow;
-}
-
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 footer { background-color:#0c1a1e; min-height:350px; font-family: 'Open Sans', sans-serif; }

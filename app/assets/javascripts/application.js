@@ -10,8 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require turbolinks
 //= require bootstrap-sprockets
 //= require bootstrap
+//= require bootstrap.min
 //= require rails-ujs
-//= require turbolinks
 //= require_tree .
