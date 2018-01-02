@@ -3,6 +3,7 @@
 <h1>Books</h1>
 
 <br/>
+<p>Type in a category below:</p>
 <%= form_tag books_path, :method => 'get' do %>
   <p>
     <%= text_field_tag :search, params[:search] %>

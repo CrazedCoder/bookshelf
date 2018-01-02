@@ -1,11 +1,12 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
-
+  
   # GET /books
   # GET /books.json
   def index
     @books = Book.search(params[:search])
     @books = @books.sort_by &:title
+    
   end
 
   # GET /books/1
