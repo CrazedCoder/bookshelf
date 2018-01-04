@@ -3,6 +3,6 @@ class BookshelfMailer < ApplicationMailer
 
   def welcome_mailer(user)
     @user = user
-    mail(to: @user.email.subject: 'Welcome to Bookshelf!')
+    mail(to: @user.email, subject: 'Welcome to Bookshelf!')
   end
 end
