@@ -1,7 +1,8 @@
 
 <div class="jumbotron">
   <h1>Welcome To The Bookshelf!</h1>
-  <h2>Your Life is Books, Organize It!</h2><br/>
+  <div class="pull-right"><%= link_to(image_tag("book_logo3.png", :alt => "home image", :width => 100, :height => 100, :title => "Click here to return to Home")) %></div>
+  <h2>Your Life Is Books, Organize It!</h2><br/>
   
   <div>
   	<% if user_signed_in? %>

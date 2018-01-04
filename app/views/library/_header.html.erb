@@ -7,7 +7,10 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<strong><%= link_to 'bookshelf', root_path, :class => 'navbar-brand' %></strong>
+			<!--<strong><%= link_to 'bookshelf', root_path, :class => 'navbar-brand' %></strong> -->
+			<%= link_to root_url do %>
+            <%= link_to(image_tag("book_logo3.png", :alt => "home image", :width => 55, :height => 55, :title => "Click here to return to Home")) %>
+            <% end %>
 		</div>
 
 		<div id="navbar" class="navbar-collapse collapse">
